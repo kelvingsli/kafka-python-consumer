@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package lesson_demo1;
+
+message WikiPost {
+  int64 id = 1;
+  string title = 2;
+  string title_url = 3;
+  int64 timestamp = 4;
+  string source = 5;
+}
