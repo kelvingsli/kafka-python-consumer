@@ -1,8 +1,6 @@
-import threading
 import os
 import logging
 
-from utils.signal_setup import stop_flag
 from logging.handlers import TimedRotatingFileHandler
 from flask_migrate import Migrate
 from flask import Flask
@@ -10,8 +8,6 @@ from routes import register_routes
 from flask_restx import Api
 from urllib.parse import quote_plus
 
-from utils.kafka_consumer import create_consumer
-from service.event_processing_svc import process
 from db.db_object import db
 
 def create_app():

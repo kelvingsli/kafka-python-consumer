@@ -1,3 +1,4 @@
-import queue
+# import queue
+from multiprocessing import Queue
 
-kafka_eq = queue.Queue()
+kafka_eq = Queue()

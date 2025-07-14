@@ -1,3 +1,4 @@
+import logging
 from sqlalchemy.dialects.postgresql import insert
 
 from db.db_object import db
@@ -28,6 +29,7 @@ class KafkaWikiStore:
     Insert if new record based on key_id unique constraints, update if key_id already exists
     '''
     def upsert_wiki_post(self, key_id, title, title_url, timestamp, source) -> WikiPostDto:
+        
         stmt = insert(KafkaWikiPost).values(
             key_id=key_id,
             title=title,
