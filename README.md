@@ -44,3 +44,5 @@ Run the command. Note to use a different port for the Kafka producer service if 
 ```
 flask run -p 5001
 ```
+
+If deploying using Docker, run the container using the Dockerfile in root.
