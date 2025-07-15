@@ -26,7 +26,7 @@ pip install -r requirement.txt
 
 ### Configuration
 
-Use the `.sample-env` and update it with the necessary credentials. Save the file with the filename `.env`
+Use the `.sample-env` and update it with the necessary credentials. Save the file with the filename `.env`. If deploying using Docker, update `.sample-docker-env`. Save the file with the filename `.docker-env`.
 
 `DB_URL` is the database url to connect. Add port number.
 `DB_USER` is the database user.
